@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="@id/tvUsername"
         app:tint="#FFFFFF" />
 
-    <!-- AVATAR -->
+    <!-- Avatar -->
     <ImageView
         android:id="@+id/imgAvatar"
         android:layout_width="80dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="@id/imgAvatar"
         android:layout_marginStart="16dp"/>
 
-    <!-- STATS -->
+    <!-- Stats -->
     <LinearLayout
         android:id="@+id/layoutStats"
         android:layout_width="0dp"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvFullName">
 
-        <!-- POST -->
+        <!-- Post -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                 android:textColor="#AAAAAA"/>
         </LinearLayout>
 
-        <!-- FOLLOWERS -->
+        <!-- Followers -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                 android:textColor="#AAAAAA"/>
         </LinearLayout>
 
-        <!-- FOLLOWING -->
+        <!-- Following -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- BUTTONS EDYTUJ/UDOSTĘPNIJ -->
+    <!-- BTN EDYTUJ/UDOSTĘPNIJ -->
     <LinearLayout
         android:id="@+id/layoutButtons"
         android:layout_width="0dp"
@@ -176,7 +176,7 @@
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 
-    <!-- HIGHLIGHTS -->
+    <!-- Highlights -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHighlights"
         android:layout_width="0dp"
@@ -186,7 +186,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- POSTS GRID -->
+    <!-- Posts Grid -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPosts"
         android:layout_width="0dp"

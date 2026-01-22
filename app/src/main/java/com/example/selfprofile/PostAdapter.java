@@ -27,7 +27,16 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.imageView.setImageResource(images[position]);
+
+        // Interackaj z postem
+        holder.imageView.setOnClickListener(v -> {
+            android.content.Intent intent = new android.content.Intent(
+                    v.getContext(), PostFullScreenActivity.class);
+            intent.putExtra(PostFullScreenActivity.EXTRA_IMAGE_RES, images[position]);
+            v.getContext().startActivity(intent);
+        });
     }
+
 
     @Override
     public int getItemCount() {
@@ -38,7 +47,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         ImageView imageView;
         ViewHolder(View itemView) {
             super(itemView);
-            imageView = (ImageView) itemView; // item_post.xml to tylko ImageView
+            imageView = (ImageView) itemView;
         }
     }
 }

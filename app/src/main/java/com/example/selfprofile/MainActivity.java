@@ -22,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // PADDING DLA LAYOUTu
+        // Padding dla Layoutu
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.root), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // AVATAR
+        // Avatar
         ImageView avatar = findViewById(R.id.imgAvatar);
         avatar.setClipToOutline(true);
 
-        // BUTTONS
+        // BTN
         Button btnEdit = findViewById(R.id.btnEditProfile);
         Button btnShare = findViewById(R.id.btnShare);
         btnEdit.setOnClickListener(v -> {
@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
             // TODO: Udostępnianie
         });
 
-        // BTN SETTINGS
+        // BTN Settings
         ImageButton btnSettings = findViewById(R.id.btnSettings);
         btnSettings.setOnClickListener(v -> {
             // TODO: Ustawienia
         });
 
-        // HIGHLIGHTS
+        // Highlights
         RecyclerView rvHighlights = findViewById(R.id.rvHighlights);
         rvHighlights.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         rvHighlights.setAdapter(new HighlightAdapter(6));
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView rvPosts = findViewById(R.id.rvPosts);
         rvPosts.setLayoutManager(new GridLayoutManager(this, 3));
 
-        // Tablica z Twoimi obrazami
+        // Tablica z obrazami
         int[] postImages = {R.drawable.post1, R.drawable.post2, R.drawable.post3, R.drawable.post4, R.drawable.post5, R.drawable.post6, R.drawable.post7, R.drawable.post8, R.drawable.post9, R.drawable.post10, R.drawable.post11, R.drawable.post12 };
         rvPosts.setAdapter(new PostAdapter(postImages));
 

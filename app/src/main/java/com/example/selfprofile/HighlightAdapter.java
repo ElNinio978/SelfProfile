@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class HighlightAdapter extends RecyclerView.Adapter<HighlightAdapter.ViewHolder> {
 
     private final int count;
-    private final String[] names = {"Unreal ✨","Fun","Travel","Food","Games","Music"};
+    private final String[] names = {"Unreal ✨", "Fun", "Travel", "Food", "Games", "Music"};
 
     public HighlightAdapter(int count) {
         this.count = count;
@@ -30,6 +30,7 @@ public class HighlightAdapter extends RecyclerView.Adapter<HighlightAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.textView.setText(names[position % names.length]);
 
+        // Dodanie innych obrazów w highlightach
         // holder.imageView.setImageResource(R.drawable.xxx);
         holder.imageView.setImageResource(android.R.drawable.sym_def_app_icon);
     }
