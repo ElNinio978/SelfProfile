@@ -1,5 +1,7 @@
 package com.example.selfprofile;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
     private final int[] images;
+    private final Context context;
 
-    public PostAdapter(int[] images) {
+    public PostAdapter(Context context, int[] images) {
+        this.context = context;
         this.images = images;
     }
 
@@ -27,16 +31,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.imageView.setImageResource(images[position]);
-
-        // Interackaj z postem
         holder.imageView.setOnClickListener(v -> {
-            android.content.Intent intent = new android.content.Intent(
-                    v.getContext(), PostFullScreenActivity.class);
-            intent.putExtra(PostFullScreenActivity.EXTRA_IMAGE_RES, images[position]);
-            v.getContext().startActivity(intent);
+            Intent intent = new Intent(context, PostFullscreenActivity.class);
+            intent.putExtra("image", images[position]);
+            context.startActivity(intent);
         });
     }
-
 
     @Override
     public int getItemCount() {
@@ -47,7 +47,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         ImageView imageView;
         ViewHolder(View itemView) {
             super(itemView);
-            imageView = (ImageView) itemView;
+            imageView = itemView.findViewById(R.id.imgPost);
         }
     }
 }

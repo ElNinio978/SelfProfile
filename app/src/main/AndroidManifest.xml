@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfProfile">
 
-        <activity android:name=".PostFullScreenActivity"
+        <activity android:name=".PostFullscreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".MainActivity"

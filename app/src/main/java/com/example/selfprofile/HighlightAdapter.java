@@ -30,7 +30,7 @@ public class HighlightAdapter extends RecyclerView.Adapter<HighlightAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.textView.setText(names[position % names.length]);
 
-        // Dodanie innych obrazów w highlightach
+        // Dodanie Innych Obrazow w Highlightach
         // holder.imageView.setImageResource(R.drawable.xxx);
         holder.imageView.setImageResource(android.R.drawable.sym_def_app_icon);
     }
