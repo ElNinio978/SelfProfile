@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Avatar w Kolku
+        // Avatar
         ImageView avatar = findViewById(R.id.imgAvatar);
         avatar.setClipToOutline(true);
 

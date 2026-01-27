@@ -12,7 +12,7 @@
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="elninio978"
+        android:text="@string/st1"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -52,7 +52,7 @@
         android:id="@+id/tvFullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kacper Wos"
+        android:text="@string/st2"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -83,13 +83,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:text="@string/st3"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Posty"
+                android:text="@string/st4"
                 android:textColor="#AAAAAA"/>
         </LinearLayout>
 
@@ -103,13 +103,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="42"
+                android:text="@string/st5"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Obserwatorzy"
+                android:text="@string/st6"
                 android:textColor="#AAAAAA"/>
         </LinearLayout>
 
@@ -123,13 +123,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="41"
+                android:text="@string/st7"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Obserwowanie"
+                android:text="@string/st8"
                 android:textColor="#AAAAAA"/>
         </LinearLayout>
     </LinearLayout>
@@ -139,7 +139,7 @@
         android:id="@+id/tvBio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="========================\nDiscord - elniniooo\n03.03.2005 🍻\nHealer abuser in all games ✨ \n========================"
+        android:text="@string/st9"
         android:textColor="#FFFFFF"
         android:textSize="13sp"
         android:layout_margin="16dp"
@@ -163,7 +163,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Edytuj profil"
+            android:text="@string/st10"
             android:textAllCaps="false"/>
 
         <Button
@@ -171,7 +171,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Udostępnij"
+            android:text="@string/st11"
             android:textAllCaps="false"
             android:layout_marginStart="8dp"/>
     </LinearLayout>
@@ -202,7 +202,7 @@
             android:id="@+id/tvSpace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+            android:text="@string/st12"
             android:textColor="#FFFFFF"
             android:textSize="13sp" />
     </LinearLayout>

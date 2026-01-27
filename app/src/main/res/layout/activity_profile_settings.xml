@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edytuj profil"
+            android:text="@string/st15"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -46,7 +46,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edytuj zdjęcie lub awatara"
+        android:text="@string/st16"
         android:textColor="#7AA2FF"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"/>
@@ -56,7 +56,7 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Imię i nazwisko"
+        android:hint="@string/st17"
         android:textColor="#FFFFFF"
         android:textColorHint="#AAAAAA"
         android:background="@android:drawable/edit_text"
@@ -67,7 +67,7 @@
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nazwa uzytkownika"
+        android:hint="@string/st18"
         android:textColor="#FFFFFF"
         android:textColorHint="#AAAAAA"
         android:background="@android:drawable/edit_text"
@@ -78,7 +78,7 @@
         android:id="@+id/etBio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Bio"
+        android:hint="@string/st19"
         android:textColor="#FFFFFF"
         android:textColorHint="#AAAAAA"
         android:background="@android:drawable/edit_text"
@@ -90,6 +90,6 @@
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Zapisz zmiany"
+        android:text="@string/st20"
         android:layout_marginTop="32dp"/>
 </LinearLayout>
