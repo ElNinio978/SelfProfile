@@ -6,7 +6,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -15,8 +14,13 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private ConstraintLayout rootLayout;
+    private int currentTheme = 0;
 
     private TextView tvFullName;
     private TextView tvUsername;
@@ -29,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        rootLayout = findViewById(R.id.root);
 
         // Texty Profilu
         // TODO: Dokonczyc
@@ -65,9 +71,31 @@ public class MainActivity extends AppCompatActivity {
         btnShare.setOnClickListener(v -> {
         });
 
-        // TODO: Ustawienia
+        // Ustawienia
         btnSettings.setOnClickListener(v -> {
+
+            int[] colors = {
+                    R.color.bg_black,
+                    R.color.bg_graphite,
+                    R.color.bg_midnight,
+                    R.color.bg_navy,
+                    R.color.bg_emerald,
+                    R.color.bg_purple,
+                    R.color.black
+            };
+
+
+            rootLayout.setBackgroundColor(
+                    getResources().getColor(colors[currentTheme])
+            );
+
+            currentTheme++;
+
+            if (currentTheme >= colors.length) {
+                currentTheme = 0;
+            }
         });
+
 
         // Highlights
         RecyclerView rvHighlights = findViewById(R.id.rvHighlights);
@@ -90,7 +118,16 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.post9,
                 R.drawable.post10,
                 R.drawable.post11,
-                R.drawable.post12
+                R.drawable.post12,
+                R.drawable.post13,
+                R.drawable.post14,
+                R.drawable.post15,
+                R.drawable.post16,
+                R.drawable.post17,
+                R.drawable.post18,
+                R.drawable.post19,
+                R.drawable.post20,
+                R.drawable.post21
         };
         rvPosts.setAdapter(new PostAdapter(this, postImages));
 
@@ -100,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Obsluga Wynikow z ChangeSettingsActivity
-    // TODO: Dokonczyc
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

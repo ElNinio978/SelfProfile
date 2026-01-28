@@ -12,14 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfProfile">
 
-        <activity android:name=".PostFullscreenActivity"
+        <activity
+            android:name=".PostFullscreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".ChangeSettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 

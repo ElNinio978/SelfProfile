@@ -10,14 +10,18 @@
         android:id="@+id/imageView"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@android:drawable/sym_def_app_icon"/>
+        android:src="@drawable/cat"
+        android:background="@drawable/avatar_circle"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/st21"
+        android:text="Highlight"
         android:textSize="11sp"
         android:textColor="#FFFFFF"
         android:layout_marginTop="4dp"/>
+
 </LinearLayout>
