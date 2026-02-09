@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_black">#0F0F0F</color>
+    <color name="bg_graphite">#181818</color>
+    <color name="bg_charcoal">#1F1F1F</color>
+    <color name="bg_navy">#0A1A2F</color>
+    <color name="bg_midnight">#0D1117</color>
+    <color name="bg_purple">#1E0F2F</color>
+    <color name="bg_emerald">#0F2A22</color>
+    <color name="bg_blue_soft">#101A2D</color>
+    <color name="bg_violet_soft">#19142A</color>
+    <color name="bg_teal_soft">#0F2424</color>
+
+
+</resources>

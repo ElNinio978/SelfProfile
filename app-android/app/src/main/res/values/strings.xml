@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">PortalSpolecznosciowy1</string>
+
+
+        <!-- activity_main -->
+    <string name="st1">elninio978</string>
+    <string name="st2">Kacper Wos</string>
+    <string name="st3">1</string>
+    <string name="st4">Posty</string>
+    <string name="st5">42</string>
+    <string name="st6">Obserwatorzy</string>
+    <string name="st7">42</string>
+    <string name="st8">Obserwowanie</string>
+    <string name="st9">========================\nDiscord - elniniooo\n03.03.2005 🍻\nHealer abuser in all games ✨ \n========================</string>
+    <string name="st10">Edytuj profil</string>
+    <string name="st11">Udostępnij</string>
+    <string name="st12">▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬</string>
+
+
+        <!-- activity_post_fullscrean -->
+    <string name="st13">Posty</string>
+    <string name="st14">elninio978</string>
+
+
+        <!-- activity_profile_settings -->
+    <string name="st15">Edytuj profil</string>
+    <string name="st16">Edytuj zdjęcie lub awatara</string>
+    <string name="st17">Imię i nazwisko</string>
+    <string name="st18">Nazwa uzytkownika</string>
+    <string name="st19">Bio</string>
+    <string name="st20">Zapisz zmiany</string>
+
+
+        <!-- item_highlight -->
+    <string name="st21">Unreal ✨</string>
+    <string name="st22">Fun 🎉</string>
+    <string name="st23">Travel 🧭</string>
+    <string name="st24">Food 🍕</string>
+    <string name="st25">Games 👑</string>
+    <string name="st26">Music 🔥</string>
+
+
+
+
+
+</resources>

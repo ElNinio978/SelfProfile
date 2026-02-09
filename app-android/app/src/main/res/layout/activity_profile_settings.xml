@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- Top Bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/st15"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/imgAvatarEdit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ava"
+        android:background="@drawable/avatar_circle"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/st16"
+        android:textColor="#23E2B5"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Imie i Nazwisko -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/st17"
+        android:textColor="#8A6E57"
+        android:textColorHint="#AAAAAA"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/st18"
+        android:textColor="#8A6E57"
+        android:textColorHint="#AAAAAA"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="20dp"/>
+
+    <!-- BIO -->
+    <EditText
+        android:id="@+id/etBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/st19"
+        android:textColor="#8A6E57"
+        android:textColorHint="#AAAAAA"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="20dp"
+        android:minLines="3"/>
+
+    <!-- Zapisz -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/st20"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>

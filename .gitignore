@@ -1,0 +1,13 @@
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/
+/build/
+
+# Node.js
+node_modules/
+.env
+
+# System
+.DS_Store
