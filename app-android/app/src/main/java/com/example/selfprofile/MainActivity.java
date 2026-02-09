@@ -161,19 +161,21 @@ public class MainActivity extends AppCompatActivity {
                     newBio != null ? newBio : ""
             );
 
-            RetrofitInstance.getApi().updateProfile(request).enqueue(new Callback<MessageResponse>() {
+            RetrofitInstance.getApi().updateProfile(request).enqueue(new Callback<UpdateProfileResponse>() {
                 @Override
-                public void onResponse(Call<MessageResponse> call, Response<MessageResponse> response) {
-                    if (response.isSuccessful()) {
-                        Log.d("MainActivity", "Profil zaktualizowany na serwerze");
+                public void onResponse(Call<UpdateProfileResponse> call, Response<UpdateProfileResponse> response) {
+                    if (response.isSuccessful() && response.body() != null) {
+                        MessageResponse updatedProfile = response.body().getProfile();
+                        Log.d("MainActivity", "Profil zaktualizowany na serwerze: " + updatedProfile.getFullName());
                     }
                 }
 
                 @Override
-                public void onFailure(Call<MessageResponse> call, Throwable t) {
+                public void onFailure(Call<UpdateProfileResponse> call, Throwable t) {
                     Log.e("MainActivity", "Błąd wysyłania profilu: " + t.getMessage());
                 }
             });
+
         }
     }
 }

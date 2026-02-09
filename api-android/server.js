@@ -17,7 +17,6 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.error(err));
 
 
-
 // ====== MODEL ======
 const profileSchema = new mongoose.Schema({
     fullName: String,
@@ -35,9 +34,9 @@ app.get("/hello", async (req, res) => {
 
     if (!profile) {
         profile = new Profile({
-            fullName: "Jan Kowalski",
-            username: "jankow",
-            bio: "Miłośnik kotów i kodu"
+            fullName: "Kacper Woś",
+            username: "ElNinio978",
+            bio: "======================== Discord - elniniooo03.03.2005 🍻Healer abuser in all games ✨ ========================"
         });
         await profile.save();
     }

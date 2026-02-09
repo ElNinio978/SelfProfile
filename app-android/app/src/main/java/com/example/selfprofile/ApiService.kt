@@ -11,5 +11,5 @@ interface ApiService {
     fun hello(): Call<MessageResponse>
 
     @POST("updateProfile")
-    fun updateProfile(@Body request: UpdateProfileRequest): Call<MessageResponse>
+    fun updateProfile(@Body request: UpdateProfileRequest): Call<UpdateProfileResponse>
 }
